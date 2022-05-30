@@ -1,0 +1,53 @@
+@import url(section.css);
+
+.container {
+    display: grid;
+    grid-gap: 3em;
+    width: 100%;
+
+}
+
+.r1 {
+    width: 98%;
+    position: fixed;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: 120px;
+    justify-items: end;
+    z-index:10;
+    border-radius: 10px;
+
+}
+
+.r1-c2{
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: large;
+    justify-items: end;
+}
+
+.r1-c2-r1 {
+    align-self: end;
+}
+
+.r1-c2-r2 {
+    align-self: start;
+}
+
+
+.r2 {
+    position:relative;
+    display: grid;
+    margin-top: 120px;
+    grid-auto-rows: minmax(600px, auto);
+}
+
+.r3 {
+    position: relative;
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+
+    
+}

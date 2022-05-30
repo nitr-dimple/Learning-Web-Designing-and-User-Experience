@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Title of an HTML Document -->
+        <title> </title>
+
+        <!-- meta tage to define meta data -->
+        <meta charset="UTF-8">
+        <meta name="author" content="Dimple Patel">
+
+        <!-- base tag to define base url -->
+        <base href="/">
+
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+    <body>
+
+
+        <!-- Navigation Menu start-->
+        <div class="r1">
+            <div class="r1-c1">
+                <img class="header-logo" src="assets/images/greenline.png">
+            </div>
+            <div class="r1-c2">
+                <div class="r1-c2-r1">
+                    <nav>
+                        <img class="icon-image " src="assets/images/gb.png" />
+                        <!-- used select tag for creating drop-down menu -->
+                        <select class="border-color" name="enusd" id="enusd">
+                            <option value="enusd">EN/USD</option>
+                        </select>
+        
+                        <!-- anchor tag to create hyperlink -->
+                        <a href="/" class="link-hover text-padding">Business</a>
+                        <a href="/" class="link-hover text-padding">Help</a>
+                        <a href="/" class="link-hover text-padding">Register</a>
+                        <button class="button-border-color text-padding" type="button">Sign in</button> 
+                    </nav>
+                </div>
+                <div class="r1-c2-r2">
+                    <nav>
+                        <select class="select-border-color text-padding" name="uk" id="uk">
+                            <option value="UK trains">UK trains</option>
+                            <option value="Train1">Train1</option>
+                            <option value="Train2">Train2</option>
+                            <option value="Train3">Train3</option>
+                        </select>
+                
+                        <select class="select-border-color text-padding" name="eu" id="eu">
+                            <option value="eu">European Trains</option>
+                            <option value="Train1">Train1</option>
+                            <option value="Train2">Train2</option>
+                            <option value="Train3">Train3</option>
+                        </select>
+                
+                        <select class="select-border-color text-padding" name="train_company" id="train_company">
+                            <option value="Train Company">Train Company</option>
+                            <option value="Company1">Company1</option>
+                            <option value="Company2">Company2</option>
+                            <option value="Company3">Company3</option>
+                        </select>
+                
+                        <select class="select-border-color text-padding" name="popular_journey" id="popular_journey">
+                            <option value="popular_journey">Popular Journey</option>
+                        </select>
+                    </nav>
+                </div>
+            </div>
+        </div>
+            <!-- Navigation Menu End-->
+            
+
+        <div class="container">
+            <!-- form section start-->
+            <div class="r2">
+                <div class="bg-image-s1">
+                    <div class="top-image-s1">
+                        <img class="train-s1" src="assets/images/train.png">
+                        <img class="flight-s1" src="assets/images/train3.png" >
+                        <div class="section-1-explore">
+                            <p class="section-1-heading ft-wg-bd">Explore Europe effortlessly by train and bus</p>
+                            <p class="ft-wg-bd">Save 61% on average when you book in advance*</p>
+                            <button class="section-1-button-learn-more" type="button">Learn More</button>
+                        </div>
+                    </div>
+
+                    <div class="form-style">
+    
+                        <!-- Creating form for train ticket booking -->
+                        <form action="/" method="GET" class="form-align" >
+    
+                            <fieldset>
+                                <!-- Source and Destinations are required -->
+                                <!-- Input field for source station -->
+                                <label for="input">Input</label>
+                                <input type="text" placeholder="From" name="input" id="input" required maxlength="50" class="text-padding">
+    
+                                <img class="image-icon-size" src="assets/images/vice-versa.png">
+    
+                                <!-- Input field for destination station -->
+                                <label for="to">To</label>
+                                <input type="text" placeholder="To" name="to" id="to" required>
+                            </fieldset>
+    
+                            <fieldset>
+                                <!-- Input field for via/avoid  -->
+                                <input class="text-padding" type="radio" name="via" id="via">
+                                <label for="via">Via/Avoid  </label>
+    
+                                &emsp;
+                                <select  class="select-border-color avoid-color text-padding" name="via_aviod" id="via_avoid">
+                                    <option value="avoid"> Avoid</option>
+                                    <option value="via">Via</option>
+                                </select>
+                                &emsp;
+    
+                                <input type="text" name="station" id="station" placeholder="Enter station...">
+                            </fieldset>
+                            
+                            <div class="form-div">
+                                <br>
+                                <input class="form-input" type="checkbox" id="f1">
+                                <label class="form-div-text" for="f1">Oneway</label>
+    
+                                <input class="form-input" type="checkbox" id="f2">
+                                <label class="form-div-text form-text-bg-color" for="f2">Return</label>
+    
+                                <input class="form-input" type="checkbox" id="f3">
+                                <label class="form-div-text" for="f3">Open Return</label>
+    
+                                <input class="form-input" type="checkbox" id="f4">
+                                <label class="form-div-text" for="f4">Seasons</label>
+    
+                                <div class="form-booking">
+                                    <fieldset>
+                                        <br>
+                                        <!-- Date type is used for out and retrun journey date -->
+                                        <label for="out"> Out</label>
+                                        <input type="date" name="out" id="out">
+            
+                                        &emsp;                        
+                                        <label for="return"> Return</label>
+                                        <input type="date" name="return" id="return">
+            
+                                        <br><br>
+                                        <!-- time type is used for specifying departure time -->
+                                        <label for="leaving">leaving at</label>
+                                        <input type="time" name="leaving" id="leaving">
+            
+                                        
+                                        &emsp;
+                                        <label for="leaving">leaving at</label>
+                                        <input type="time" name="leaving" id="leaving">
+            
+                                        <br><br>
+                                        <label for="passenger">Add passengers</label>
+                                        <select class="form-selector">
+                                            <option>Adult</option>
+                                            <option>Kids(16+)</option>
+                                            <option>Kids(18+</option>
+                                        </select>
+                                    </fieldset>
+                                    <button class="form-button" type="submit">Get times and Tickets</button>
+    
+                                </div>
+                            </div>
+                        </form>
+                    </div>        
+                </div>
+            </div>
+            <!-- form section Ends-->
+
+            <!-- Card section Starts --> 
+            <div class="r3">
+
+            </div> 
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Video section Ends -->  
+
+<!-- Support Customer Section Starts-->
+        <section>
+            <div class="section-3">
+                <!-- Article tag is used to define idependent components -->
+                <div class="column">
+                    <div class = card>
+                        <img class="icon" src="assets/images/Ellipse 9.png">
+                        <img class="mark-image" src="assets/images/1.png">
+                        <div class="container">
+                            <h1>Compare</h1>
+                            <p class="text-color"> Compare <strong> cheap </strong> prices for train and bus tickets</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                        <div class = card>
+                        <img class="icon" src="assets/images/Ellipse 9.png">
+                        <img class="mark-image" src="assets/images/train1.png">
+                        <div class="container">
+                            <h1>Travel</h1>
+                            <p  class="text-color"> Travel thousands of desitnations in and across <b> 45</b> countries</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class = card>
+                        <img class="icon" src="assets/images/Ellipse 9.png">
+                        <img class="mark-image" src="assets/images/user.png">
+                        <div class="container">
+                            <h1>Join People</h1>
+                            <p class="text-color">Join millions of people who use us every day</p>  
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="column">
+                    <div class = card>
+                        <img class="icon" src="assets/images/Ellipse 9.png">
+                        <img class="mark-image" src="assets/images/chat.png">
+                        <div class="container">
+                            <h1>Support</h1>
+                            <p class="text-color">Customer service on hand every step of the way</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class = card>
+                        <img class="icon" src="assets/images/Ellipse 9.png">
+                        <img class="mark-image" src="assets/images/customer.png">
+                        <div class="container">
+                            <h1>Customer</h1>
+                            <p class="text-color">Our differentiated custome feature and unique capacity built up across our highly <i>B2C</i> channels are also available.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- Support Customer section Ends-->
+        
+<!-- Explore section Starts -->
+        <section>  
+            <div class="section-4">
+                <div class="section-4-content">
+                    <p class="section-4-heading">Explore Europe effortlessly by train and bus</p>
+
+                    <p class="section-4-offer">Save 61% on average when you book in advance*</p>
+                    <br><br>
+                    <button class="section-4-button" type="button">Get More Details</button>
+                </div>
+    
+                <div class="section-4-image">
+                    <img class="section-4-dots" src="assets/images/dots.png">
+                    <img class="section-4-whiteround" src="assets/images/Ellipse 11.png" >
+                    <img class="section-4-lightblueround" src="assets/images/image.png" > 
+                    <img class="section-4-flight" src="assets/images/train3.png" >
+                    <img class="section-4-woman" src="assets/images/woman.png" >
+                </div>
+            </div>
+        </section>     
+<!-- Explore part Ends -->
+
+
+<!-- FAQ Section Starts -->
+        <section>
+            <div class="section-5">
+                <div class="section-5-content">
+                    <p class="section-4-heading">  <b>We are here to help </b> </p>
+                    <p class="section-5-faqline">Find clear <a href="/" class="section-5-faq-color"><b> FAQs </b></a> online and customer service available at the end of the phone seven days a week </p>
+                    <img class="section-5-image" src="assets/images/laptop.png"/>
+                    <br><br>
+                    <button class="section-5-button" type="button">CTA Button</button>
+                
+                </div>
+                <!-- FAQ Questions -->
+                <div class="section-5-faqdiv">
+
+                    <input class="section-5-faqinput" type="checkbox" id="q1" />
+                    <label class="section-5-faqlabel" for="q1">1. Do I need to confirm in advance if travelling on a different train?</label>
+
+                    <div class="section-5-faqans">
+                        <p>You don't need to let us know if you want to change trains, but you will need to check the terms of your tickets to see if it'll still be valid for a different train</p>
+                    </div>
+
+
+                    <input class="section-5-faqinput" type="checkbox" id="q2" />
+                    <label class="section-5-faqlabel" for="q2">2. How much luggage can i take on the train?</label>
+
+                    <div class="section-5-faqans">
+                        <p>You are allowed to carry 1 personal bag(laptop bag/purse), 1 seven kg bag and 1 more bag of 23kg.</p>
+                    </div>
+
+                    <input class="section-5-faqinput" type="checkbox" id="q3" />
+                    <label class="section-5-faqlabel" for="q3">3. How will I receive my ticket?</label>
+
+                    <div class="section-5-faqans">
+                        <p>You can download your ticket from your account or you can select send mail option where we will email your ticket.</p>
+                    </div>
+
+                    <input class="section-5-faqinput" type="checkbox" id="q4" />
+                    <label class="section-5-faqlabel" for="q4">4. What do the different seat option mean ?</label>
+
+                    <div class="section-5-faqans">
+                        <p>
+                            Different seat options are:
+                            <dl>
+                                <dt>Forward Facing</dt>
+                                <dd>You will be facing the front of the train.</dd>
+                                <dt>Backward Facing</dt>
+                                <dd>You will be facing back of the train.</dd>
+                                <dt>Airline style</dt>
+                                <dd>Type of seat that's not around a table.</dd>
+                            </dl>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- FAQ Section Ends -->
+
+<!-- Mobile App Section Starts-->
+        <section>
+            <div class="section-6">
+                <div class="section-6-content">
+                    <p class="section-4-heading">  <b>Europe's leading train and bus app </b> </p>
+                    <p class="section-5-faqline"> Keep your trip on track with departure times, platform info, and tickets in the palm of your hand.</p> 
+                    <a class="section-6-img" href="https://www.apple.com/store"><img src="assets/images/applestore.png" height="100px" width="200px"></a>
+                    <a class="section-6-img" href="https://play.google.com/store?hl=en_US&gl=US"><img src="assets/images/googlestore.png" height="100px" width="200px"></a>
+                </div>
+                <div class="section-6-mobileimg">
+                    <img src="assets/images/mobile.png" height="400px" width="350px"/>
+                </div>
+            </div>
+        </section>
+<!-- Mobile App Section Ends-->
+
+<!-- Footer Starts -->
+        <footer class="footer"> 
+            <div class="footer-back-img">
+                <div class="footer-customer">
+                <!-- b tag is used to make text bold -->
+                <b> We are happy when our customer are too.</b>
+                </div>
+      
+                    <div class="footer-3div">
+                        <img src="assets/images/greenlinewhite.png" width="300px">
+                        <div class="section-5-faqline pt-20 clr-wh">
+                            Greeline.com limited is registered in England and Wales. Company No. 3846791.
+                        </div>
+                        <!-- Added Address -->
+                        <div class="section-5-faqline pt-20 clr-wh pt-30">
+                            Registered Address:
+                            <address>
+                                3rd floor, 120 Holborn, London ECIN 2TD, United Kingdom, VAT Number:791^^726106.
+                            </address>
+                        </div>
+                        <div class="pt-30">
+                            <img src="assets/images/facebook.png" height="50" width="50">
+                            <img src="assets/images/twitter.png" height="50" width="50">
+                            <img src="assets/images/camera.png" height="50" width="50">
+                            <img src="assets/images/whatsapp.png" height="50" width="50">     
+                        </div>
+                    </div>
+
+                    <div class="footer-3div">
+                        <ul class="footer-ul">
+                            <li><a href="/"  class="link-hover text-padding clr-wh">About Greenline</a></li>
+                            <li><a href="/" class="link-hover text-padding clr-wh">News</a></li>
+                            <li><a href="/" class="link-hover text-padding clr-wh">Investors</a></li>
+                            <li><a href="/" class="link-hover text-padding clr-wh">Careers</a></li>
+                            <li><a href="/" class="link-hover text-padding clr-wh">Greenline Partner Solutions</a></li>
+                            <li><a href="/" class="link-hover text-padding clr-wh">Affiliated and Partnerships</a></li>
+                            <li><a href="/" class="link-hover text-padding clr-wh">Terms and Conditions/Security</a></li>
+                            <li><a href="/" class="link-hover text-padding clr-wh">Privacy/ Cookies</a></li>
+                            <li><a href="/" class="link-hover text-padding clr-wh">Modern Slavery Act (UK)</a></li>                         
+                        </ul>
+                    </div>
+
+                    <div class="footer-3div">
+                        <ul class="footer-ul">
+                            <li><a href="/" class="link-hover text-padding clr-wh">Help and useful information</a></li>
+                            <li><a href="/" class="link-hover text-padding clr-wh">Train and Bus Companies</a></li>
+                            <li><a href="/" class="link-hover text-padding clr-wh">Train Journey in the UK</a></li>
+                            <li><a href="/" class="link-hover text-padding clr-wh">Train and Buses in Europe</a></li>
+                            <li><a href="/" class="link-hover text-padding clr-wh">Greenline Partner Solutions</a></li>
+                            <li><a href="/" class="link-hover text-padding clr-wh">Top Destinations</a></li>
+                            <li><a href="/" class="link-hover text-padding clr-wh">Stations</a></li>                
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p class="mg-l-150">Copyright 2021 Greenline.com Limited and its affiliated companies. All rights reserved. &emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp; &emsp;
+                    Terms & Condition | Privacy Policy
+                    </p>
+            </div>
+        </footer>
+<!-- Copyright Section Ends -->
+
+    </body>
+</html>
