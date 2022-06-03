@@ -1,7 +1,6 @@
 ### Author Detail <br>
-**Name**: Dimpleben Kanjibhai Patel <br />
-**Email**: [patel.dim@northeastern.edu](mailto:patel.dim@northeastern.edu) <br />
-**NUID**: 002965372 <br />
+**Name**: Dimplei Patel <br />
+**Email**: [patel.dimple1408@gmail.com](mailto:patel.dim@northeastern.edu) <br />
 
 ## Introduction
 This repository has basic html tags and use of that. The main purpose here is to learn html tags. Different sections are created for designing this page. Header of the page contains navigation bar. Then, In the first section, form is created to book travel tickets. Second section displays video. Third section is for customer and support. Forth section is for offers. Fifth section is for FAQ. Then there is a section for mobile app download and the last section is for contact and for getting more information. At the end, there is a footer for copyright. Various html tags are used in each of the section. 
