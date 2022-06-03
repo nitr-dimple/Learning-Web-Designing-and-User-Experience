@@ -1,7 +1,6 @@
 ### Author Detail <br>
 **Name**: Dimpleben Kanjibhai Patel <br />
-**Email**: [patel.dim@northeastern.edu](mailto:patel.dim@northeastern.edu) <br />
-**NUID**: 002965372 <br />
+**Email**: [patel.dimple1408@gmail.com](mailto:patel.dim@northeastern.edu) <br />
 
 ## Introduction
 This repository contains basic HTML tags and CSS properties. The main purpose of this repository is to learn CSS. Using different different CSS properties, each section of the page is given a style. CSS properties gives formatting and styling to HTML tags. Different types of Selectors are used. They are menition below.
