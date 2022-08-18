@@ -1,0 +1,38 @@
+
+// Nav class
+nav {
+    background-color: rgb(14, 177, 226);
+}
+
+// For main div class
+.header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-auto-rows: auto;
+    justify-items: center;
+    background-color: rgb(14, 177, 226);
+    border-radius: 7px;
+    width: 100%;
+    color: whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+// For add task button
+.clm2 {
+    align-self: center ;
+    justify-self: center;
+}
+
+// add task button 
+button {
+    border: none;
+    border-radius: 7px;
+    padding: 10px 10px;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+
+}
