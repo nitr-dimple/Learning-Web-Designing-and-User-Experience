@@ -1,0 +1,22 @@
+{
+  "name": "lecture-4-lab-dimple1423",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/main.scss dist/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info6150-spring-2022/lecture-4-lab-Dimple1423.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info6150-spring-2022/lecture-4-lab-Dimple1423/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info6150-spring-2022/lecture-4-lab-Dimple1423#readme",
+  "devDependencies": {
+    "sass": "^1.49.7"
+  },
+  "description": ""
+}

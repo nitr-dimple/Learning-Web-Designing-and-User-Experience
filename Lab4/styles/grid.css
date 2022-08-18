@@ -1,0 +1,36 @@
+/* @import url(layout.css); */
+
+.cell {
+    background-color: rgb(247, 225, 205,0.4);
+    padding: 25px;
+    border: 2px solid rgb(228, 132, 7);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px,200px);
+    border: 2px solid black;
+    margin: 200px;
+    /* align-items: center; */
+
+}
+
+.cell1 {
+    grid-row: 1;
+    grid-column: 1/3;    /* Extends from 1 to 3*/
+    align-self: center;
+    justify-self: center;
+
+}
+
+.cell2 {
+    grid-row: 2/4;
+    grid-column: 2;
+    place-self: center;
+}
+
+.cell3 {
+    grid-row: 3;
+    grid-column: 1/4;
+}

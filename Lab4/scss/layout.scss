@@ -1,0 +1,42 @@
+body {
+    padding: 20px;
+}
+.grid-container {
+    @include border(black);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px,200px);
+    border: 2px solid black;
+    margin: 200px;
+    /* align-items: center; */
+
+   > .cell1 {
+       @extend .cell;
+        grid-row: 1;
+        grid-column: 1/3;    /* Extends from 1 to 3*/
+        // align-self: center;
+        // justify-self: center;
+    
+    }
+    
+    > .cell2 {
+        @extend .cell;
+        grid-row: 2/4;
+        grid-column: 2;
+        // place-self: center;
+    }
+    
+   > .cell3 {
+        @extend .cell;
+        grid-row: 3;
+        grid-column: 1/4;
+    }
+
+}
+
+.cell {
+    @include border($cell-border-color);
+    background-color: $cell-color;
+    padding: 25px;
+}
+
