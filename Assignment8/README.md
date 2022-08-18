@@ -2,7 +2,6 @@
 
 **Name**: Dimpleben Kanjibhai Patel <br />
 **Email**: [patel.dim@northeastern.edu](mailto:patel.dim@northeastern.edu) <br />
-**NUID**: 002965372 <br />
 
 ## Introduction
 
