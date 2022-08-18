@@ -1,0 +1,33 @@
+.section {
+    padding: 10px;
+    font-size: 24px;;
+}
+
+.section:hover {
+    background-color: royalblue;
+    cursor: pointer;
+}
+
+.section::first-letter{
+    font-size: 40px;
+}
+
+.section::selection {
+    background-color: salmon;
+}
+
+.section, p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.part {
+    width: 100px;
+    display: inline-block;
+}
+
+.section {
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    
+}

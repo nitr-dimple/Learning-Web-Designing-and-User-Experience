@@ -1,0 +1,26 @@
+@import url(layout.css);
+
+[data] {
+    color: cornflowerblue !important;
+}
+
+[data = "fruit"]{
+    font-weight: bolder;
+    color:red;
+}
+
+[data ^= "orange"] {
+    font-family: sans-serif;
+}
+
+[data $= "fruit"] {
+    font-style: italic;
+}
+
+[data *= "yellow"]{
+    font-size: xx-large;
+}
+
+[data ~= "yellow"]{
+    text-align: center;
+}

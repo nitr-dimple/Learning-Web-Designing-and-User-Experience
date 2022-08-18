@@ -1,0 +1,17 @@
+@import url(layout.css);
+
+section p {
+    color:brown;
+}
+
+section > h1 {
+    font-family:monospace;
+}
+
+.article + p {
+    font-size: large;
+}
+
+.article ~ p {
+    text-align: center;
+}
