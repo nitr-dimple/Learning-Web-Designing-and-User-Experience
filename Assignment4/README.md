@@ -1,7 +1,6 @@
 ### Author Detail <br>
 **Name**: Dimpleben Kanjibhai Patel <br />
 **Email**: [patel.dim@northeastern.edu](mailto:patel.dim@northeastern.edu) <br />
-**NUID**: 002965372 <br />
 
 ## Introduction
 This repository contains basic HTML tags, SASS syntax with CSS properties. The main purpose of this repository is to learn SASS, Gridlayout and positioning elements.
