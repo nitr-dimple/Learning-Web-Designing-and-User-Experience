@@ -1,0 +1,736 @@
+@import 'variable';
+@import 'mixin';
+
+.container {
+    display: grid;
+    grid-gap: 2em;
+    width: 100%;
+}
+
+h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: $bgColorW;
+    border-radius: 10px;
+}
+
+.text-padding {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+}
+
+a {
+    @extend .text-padding;
+    text-decoration: $linkTxtDecoration;
+
+    &:hover {
+        color: rgb(0, 100, 255);
+    }
+}
+
+a:active {
+    color: rgb(0, 100, 255);
+}
+
+.section-4-heading {
+    font-size:xx-large;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+li{
+    margin: 10px 0;
+}
+
+
+.r1 {
+    width: 98%;
+    position: fixed;
+    background-color: $bgColorW;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: 120px;
+    justify-items: end;
+    z-index:10;
+    border-radius: 10px;
+
+    .r1-c1 {
+        @include heightWidth(70px, 350px);
+        margin-top: 30px;
+        margin-left: 200px;
+    }
+
+    .r1-c2{
+        @include createGrid(1, 10px);
+        font-size: $fontSizeL;
+
+        .r1-c2-r1 {
+            @include gridCell(end, end);
+            
+            img {  
+                @include heightWidth(20px, 30px);
+            }
+
+            select {
+                border: $borderN;
+                color: $hoverColor;
+            }
+
+            button { 
+                @include heightWidth(30px, 100px);
+                border: $buttonColorB;
+                background-color: $buttonColorB;
+                font-size: $fontSizeL;
+                color: $txtColorW !important;
+                border-radius: 20px;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        
+        .r1-c2-r2 {
+            @include gridCell(start, end);
+            select {
+                @extend .text-padding;
+                border: $borderN;
+                margin-top: 20px;
+                font-size: medium;
+            }
+        }
+    }
+
+}
+
+.r2 {
+    @include createGrid(1, 600px);
+    @include heightWidth(650px, 99%);
+    margin-top: 120px;
+    background-image: url(../assets/images/rectangle.png);  
+
+    .top-image-s1{
+        position: relative;
+        margin-left: 350px; 
+        padding-top: 50px;  
+
+        .train-s1 {
+            @include heightWidth(550px, 900px);
+            position: relative;
+            opacity: 0.7;
+            filter: contrast(50%);
+        }
+        
+        .flight-s1 {
+            @include heightWidth(180px, 450px);
+            position: absolute; 
+            top:400px; 
+            right: 240px;
+        }
+
+        .section-1-explore {
+            @include heightWidth(300px, 460px);
+            position: relative;
+            bottom: 500px;
+            left:430px;
+            color:$buttonColorG;
+
+            p {
+                font-weight:900;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+
+            .section-1-heading {
+                font-size: xx-large;
+            }
+
+            button {
+                background-color: #1b9c80;
+                border-color: white ;
+                padding: 10px 50px 10px 50px;
+                border-radius: 20px;
+                color: $txtColorW;
+                font-weight: bold;
+                margin-left: 100px;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+
+    .form-style {
+        @include heightWidth(500px, 550px);
+        position: absolute;  
+        top: 70px; 
+        color:black; 
+        left: 100px; 
+        background-color: white; 
+        border-radius: 30px; 
+
+        form {
+            position: absolute; 
+            top: 50px; 
+            left: 20px;
+
+            fieldset {
+                border: none;
+            }
+
+            input[type=text] {
+                width: 190px;
+                padding: 12px 20px;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                box-sizing: border-box;
+            }
+
+            .image-icon-size {
+                @include heightWidth(40px, 40px);
+                position: relative;
+                top: 10px;
+            }
+
+            select {
+                border: $borderN;
+                background-color:  rgba(238, 236, 227, 0.945);
+                border-radius: 5px;
+                padding: 10px 30px 10px 30px;
+            }
+
+            .form-div {
+                @include heightWidth(270px, 75%);
+                height: 270px;
+                width: 75%;
+                background-color: rgb(23, 58, 156);
+                margin-left: 50px;
+                border-radius: 10px;
+                color: white;
+
+                .form-input {
+                    display: none;
+                }
+
+                .form-div-text {
+                    margin-top: 10px;
+                    padding: 8px 15px;
+                }
+
+                .form-text-bg-color {
+                    background-color: #1b9c80;
+                    border-radius: 20px;
+                }
+
+                div {
+                    @include heightWidth(170px, 130%);
+                    background-color: rgb(248, 247, 247);
+                    border-radius: 10px;
+                    margin-top: 10px;
+                    margin-left: -52px;
+                    color: black;
+
+                    input[type=date], input[type=time] {
+                        width: 150px;
+                        padding: 5px 10px;
+                        display: inline-block;
+                        border: 1px solid #ccc;
+                        border-radius: 8px;
+                        box-sizing: border-box;
+                    }
+
+                    select {
+                        width: 250px;
+                        border: none;
+                        padding: 10px 20px;
+                    }
+
+                    button {
+                        border: none;
+                        color: white;
+                        background-color: rgb(23, 58, 156);
+                        margin-top: 16px;
+                        margin-left: 140px;
+                        font-size: large;
+                        &:hover {
+                            color:#1b9c80
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.r3 {
+    @include createGrid(1, 10px);
+    grid-gap: 2em;
+
+    .section-2-viewmoreinput {
+        display: none;
+    }
+    
+    .section-2-viewmoreinput + .section-2-viewmoreoutput + .r3-r2 + .r3-r3 {
+        display: none;
+    }
+    
+    .section-2-viewmoreinput:checked + .section-2-viewmoreoutput + .r3-r2 + .r3-r3 {
+        display: grid;
+    }
+    
+    .section-2-viewmoreoutput {
+        position: relative;
+        top:10px;
+        left: 600px;
+        height: 20px;
+        width:100px;
+        margin: 10px 20px;
+        padding: 10px 80px;
+        background-color: #1b9c80;
+        text-align: center;
+        border-radius: 20px;
+        color:white;
+        &:hover {
+            background: #a1ddc9;
+        }
+    }
+    
+    .r3-r2, .r3-r3 {
+        @include createGrid(3, 10px);
+        justify-items: center;
+        align-items: center;
+
+        .r3-r2-c1, .r3-r2-c2, .r3-r2-c3, .r3-r3-c1, .r3-r3-c2, .r3-r3-c3 {
+            @extend .card;
+            @include heightWidth(350px, 400px);
+            padding: 15px 15px;
+
+            .effiel-image {
+                @include heightWidth(250px, 400px);
+                border-radius: 10px;
+            }
+
+            .train-effiel {
+                position: relative;
+                bottom: 230px;
+                left: 330px;
+                background-color: white;
+                border-radius: 50%;
+                width: 60px;
+                img {
+                    padding: 7px 14px;
+                }
+            }
+            
+            .effiel-text-color {
+                color:#1b9c80;
+                font-weight: bold;
+                font-size: large;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            
+            .rate-div {
+                position: relative; 
+                bottom: 70px; 
+                left:280px;
+            }
+            
+            .rate-value {
+                background-color: rgb(23, 65, 121); 
+                width: 20px; 
+                padding: 5px 10px; 
+                border-radius: 8px;
+                color: white;
+            }
+            
+            .effiel-review {
+                font-size: smaller;
+                margin-left: 40px;
+                margin-top: -17px;
+            }
+             
+            .pd {
+                position: relative;
+                bottom: 70px;
+                padding: 0 16px;
+            }
+        }
+    }  
+}
+
+.r4 {
+    @include createGrid(5, 10px);
+    grid-gap: 2em;
+    background-color:azure;
+    padding:70px 15px;
+
+    .r4-c1, .r4-c2, .r4-c3, .r4-c4, .r4-c5 {
+        @extend .card;
+        @include heightWidth(220px, 250px);
+        margin: 10px 10px;
+
+        .icon {
+            padding-left: 20px;
+            padding-top: 10px;
+            height: 50px;
+            width: 50px;
+            opacity: 0.4;
+        }
+        
+        .mark-image {
+            position: relative;
+            bottom: 13px;
+            margin-left: -41px;
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+        }
+
+        h1 {
+            @extend .text-padding;
+        }
+
+        p {
+            @extend .text-padding;
+            color: rgb(212, 209, 209);
+        }
+    }
+
+}
+
+.r5 {
+    @include heightWidth(500px, 99%);
+    background-image: url(../assets/images/roundrectangle.png), url(../assets/images/Rectangle\ 159.png); 
+    background-position: right top, left top;
+    background-size: 1460px 500px, 1500px 500px; 
+    background-repeat: no-repeat, no-repeat; 
+    color:white;
+
+    .section-4-content {
+        @include heightWidth(300px, 400px);
+        margin-left: 100px; 
+        margin-top: 70px; 
+        padding-top: 10px; 
+        float: left;
+    }
+    
+    .section-4-image {
+        @include heightWidth(300px, 400px);
+        float: left; 
+        padding-top: 10px;
+    }
+    
+
+    
+    .section-4-offer {
+        font-size:medium;
+        font-weight: 700;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .section-4-button {
+        @include heightWidth(30px, 250px);
+        margin-left: 10px;
+        border: white;
+        background-color: white;
+        font-size: medium;
+        font-weight: bolder;
+        color: rgb(15, 128, 100);
+        border-radius: 20px;
+        padding: 14px 50px 27px 50px;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    
+    .section-4-dots {
+        position: relative; 
+        top:40px; 
+        left: 350px;
+    } 
+    
+    .section-4-whiteround {
+        @include heightWidth(150px, 150px);
+        position: relative; 
+        top:20px; 
+        left: 380px;
+    }
+    
+    .section-4-lightblueround {
+        @include heightWidth(150px, 150px);
+        position: relative; 
+        top:200px; 
+        left: 330px;
+    }
+    
+    .section-4-flight {
+        @include heightWidth(150px, 350px);
+        position: relative; 
+        top:50px; 
+        left: 120px;
+    }
+    
+    .section-4-woman {
+        @include heightWidth(400px, 500px);
+        position: relative; 
+        bottom:300px; 
+        left: 240px;
+    }
+}
+
+.r6, .r7 {
+    @include createGrid(2, 10px);
+    grid-gap: 2em;
+
+    .r6-c1 {
+        @include heightWidth(300px, 330px);
+        margin-left: 170px; 
+
+        .section-5-faq-color {
+            color:rgb(23, 172, 135);
+            &:hover {
+                color: $hoverColor;
+            }
+        }
+        
+        .section-5-faqline {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:rgb(59, 58, 58);
+        }
+
+        .section-5-image {
+            height:150px;
+            width:250px;
+        }
+        
+        .section-5-button {
+            @include heightWidth(30px, 100);
+            border: rgb(0, 130, 186);
+            background-color: rgb(0, 130, 186);
+            color: white !important;
+            border-radius: 20px;
+            padding: 16px 100px 29px 100px;
+            font-weight: bold;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+    
+    .r6-c2 {
+        @include heightWidth(400px, 600px);
+        margin-top: 30px;
+        margin-right: 150px;
+        overflow: scroll;
+
+        .section-5-faqinput {
+            display: none;
+        }
+        
+        .section-5-faqlabel {
+            display: block;    
+            padding: 20px 22px;
+            margin: 15px 0 1px 0;
+            cursor: pointer;
+            background: #1b9c80;
+            border-radius: 10px;
+            color: #FFF;
+            transition: ease .5s;
+            font-weight: bold;
+            font-size: medium;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            &:hover {
+                background: #a1ddc9;
+            }
+        }
+
+        .section-5-faqans {
+            background: white;
+            padding: 10px 25px;
+            border: 1px solid #f3eeee;
+            margin: 0 0 1px 0;
+            border-radius: 3px;
+        }
+        
+        .section-5-faqinput + .section-5-faqlabel + .section-5-faqans {
+            display: none;
+        }
+        
+        .section-5-faqinput:checked + .section-5-faqlabel + .section-5-faqans {
+            display: block;
+        }
+    }
+
+    .r6-c2::-webkit-scrollbar {
+        display: none;
+    }
+
+    .section-6-mobileimg {
+        @include gridCell(center, end);
+    }
+
+    .section-6-content {
+        float: left; 
+        margin-left: 200px; 
+        height:200px; 
+        width:450px; 
+        padding-top: 50px;
+
+        .section-5-faqline {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:rgb(59, 58, 58);
+        }
+
+        .section-6-img{
+            &:hover {
+                background:#e9e9f0;
+                transform: scale(1.5);
+            }
+        }
+        
+        .section-6-mobileimg {
+            float: right; 
+            height:400px; 
+            width:500px
+        }
+
+    }
+
+    // .right-arrow {
+    //     position: relative;
+    //     margin-top: 30px;
+    //     height: 50px;
+    //     width: 50px;
+    //     // padding-left:1300px;
+    //     float:right 
+    // }
+}
+
+.r8 {
+    @include createGrid(1, 10px);
+    color:white;
+    background-image: url(../assets/images/darkgreenrectangle.png);
+    height: 430px;
+    background-repeat: no-repeat;
+
+    .r8-r1 {
+        @include gridCell(center, start);
+        padding-left: 100px;
+        padding-top: 15px;
+    }
+    
+    .r8-r2 {
+        @include createGrid(3, 10px);
+        color:white;
+        padding-left: 170px;
+
+        .r8-r2-c1 {
+            align-self: start;
+            padding-top: 10px;
+            .section-5-faqline {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color:rgb(59, 58, 58);
+            }
+            .pt-20 {
+                padding-top: 20px;
+                color:white; 
+            }
+            
+            .pt-30 {
+                padding-top: 30px
+            }
+            color:$txtColorW;
+            
+            .icon-grid {
+                @include createGrid(7, auto);
+
+                @each $name in 'facebook' 'twitter' 'camera' 'whatsapp' {
+                    .icon-#{$name} {
+                        @include heightWidth(50px, 50px);
+                        background-image: url(../assets/images/#{$name}.png);
+                        background-size: 50px, 50px;
+                        }
+                }
+            }
+        }
+        
+        .r8-r2-c3 {
+            ul {
+                list-style-type: none;
+            }
+            li {
+                padding-top: -10px;
+            }
+            a {
+                @extend .text-padding;
+                text-decoration: none;
+                color: $txtColorW;
+                border-bottom: 2px solid white; 
+                padding-bottom: 10px;
+                &:hover {
+                    color: $hoverColor;
+                }
+
+                img {
+                    height: 20px;
+                    position: relative;
+                    padding-left: 135px; 
+                    padding-top: 10px;
+                }
+
+                .i2 {
+                    padding-left: 150px; 
+                }
+
+                .i3 {
+                    padding-left: 160px; 
+                }
+
+                .i4 {
+                    padding-left: 210px; 
+                }
+
+                .i5 {
+                    padding-left: 270px; 
+                }
+
+            }
+        }
+
+        .r8-r2-c2 {
+            @extend .r8-r2-c3; 
+            @include gridCell(start, center);
+            a {
+                border-bottom: none; 
+            }
+            align-self: start;
+            padding-top: 10px;
+
+
+        }
+    }    
+}
+
+.r9 {
+    @include createGrid(2, 10px);
+    color: $txtColorW;
+    background-image: url(../assets/images/footer.png);
+    align-items: center;
+    justify-items: center;
+    margin-top: -50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

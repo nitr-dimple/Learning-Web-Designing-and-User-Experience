@@ -1,0 +1,16 @@
+@mixin createGrid($columns, $rowSize) {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-auto-rows: minmax($rowSize, auto);
+}
+
+@mixin gridCell($align, $justify) {
+    align-self: $align;
+    justify-self: $justify;    
+}
+
+@mixin heightWidth($height, $width) {
+    height: $height;
+    width: $width;
+}

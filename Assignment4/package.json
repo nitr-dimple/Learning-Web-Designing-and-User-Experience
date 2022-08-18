@@ -1,0 +1,22 @@
+{
+  "name": "assignment-4-dimple1423",
+  "version": "1.0.0",
+  "description": "**Name**: Dimpleben Kanjibhai Patel <br />\r **Email**: [patel.dim@northeastern.edu](mailto:patel.dim@northeastern.edu) <br />\r **NUID**: 002965372 <br />",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/main.scss dist/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info6150-spring-2022/assignment-4-Dimple1423.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info6150-spring-2022/assignment-4-Dimple1423/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info6150-spring-2022/assignment-4-Dimple1423#readme",
+  "devDependencies": {
+    "sass": "^1.49.7"
+  }
+}
