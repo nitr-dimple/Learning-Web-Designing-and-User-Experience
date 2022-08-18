@@ -1,7 +1,6 @@
 ### Author Detail <br>
 **Name**: Dimpleben Kanjibhai Patel <br />
 **Email**: [patel.dim@northeastern.edu](mailto:patel.dim@northeastern.edu) <br />
-**NUID**: 002965372 <br />
 
 ## Introduction
 This repositoy creates basic todo list. This basically includes functionality like adding new task, marking the task as complete and deleting the task. Also predefined datas are fetched from json file through XHR and loaded into the page using javascript. You can add new task by clicking on Add button and then filling the required information. 
