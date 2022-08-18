@@ -1,7 +1,6 @@
 ### Author Detail <br>
 **Name**: Dimpleben Kanjibhai Patel <br />
 **Email**: [patel.dim@northeastern.edu](mailto:patel.dim@northeastern.edu) <br />
-**NUID**: 002965372 <br />
 
 ## Introduction
 This repositoy creates basic todo list. This basically includes functionality like adding new task, updating the task, viewing all the task and deleting the task. This repository only contains backen part of the todo task. Following are the APIs we have created.
