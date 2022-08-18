@@ -1,0 +1,22 @@
+{
+  "name": "assignment-6-dimple1423",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/main.scss dist/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info6150-spring-2022/assignment-6-Dimple1423.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info6150-spring-2022/assignment-6-Dimple1423/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info6150-spring-2022/assignment-6-Dimple1423#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.49.9"
+  }
+}

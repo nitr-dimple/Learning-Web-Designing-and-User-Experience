@@ -1,0 +1,37 @@
+[
+    {
+        "title" : "Web Design Assignment 6",
+        "description" : "Make my to-do list which allows used to add to-do items, mark it as complete",
+        "due_date" : "02/24/2022",
+        "time" : "17:00",
+        "status": "open"
+    },
+    {
+        "title" : "AED Assignment 3",
+        "description" : "Create a model diagram for Professor As a Service",
+        "due_date" : "03/05/2022",
+        "time" : "12:00",
+        "status": "open"
+    },
+    {
+        "title" : "ENCP DB lession",
+        "description" : "Complete lession in group",
+        "due_date" : "02/27/2022",
+        "time" : "23:59",
+        "status": "open"
+    },
+    {
+        "title" : "Update Resume",
+        "description" : "Update projects and align the resume",
+        "due_date" : "05/30/2022",
+        "time" : "23:59",
+        "status": "open"
+    },
+    {
+        "title" : "Update LinkedIn Profile",
+        "description" : "Update current details and pass work expirence details",
+        "due_date" : "03/2/2022",
+        "time" : "23:59",
+        "status": "closed"
+    }
+]
