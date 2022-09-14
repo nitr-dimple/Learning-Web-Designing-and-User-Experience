@@ -26,6 +26,6 @@ Created basic todo task which allows CRUD operation. Data is fetched from the js
 
 Implemented CRUD operation on todo task which contains only backend implementation using mongodb and expressjs.
 
-## [ssignment8](https://github.com/nitr-dimple/Learning-Web-Designing-and-User-Experience/tree/main/Assignment8) (React, Redux)
+## [Assignment8](https://github.com/nitr-dimple/Learning-Web-Designing-and-User-Experience/tree/main/Assignment8) (React, Redux)
 
 Implemented CRUD operation on todo task which include both frontend and backend implementations. Frontend implementation uses React and Redux and backend implementations uses mongodb and expressjs.
