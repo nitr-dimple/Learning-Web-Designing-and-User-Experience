@@ -2,15 +2,15 @@
 
 This is a class repository for Web Design and User Experience.
 
-## Assignment2
+## [Assignment2](https://github.com/nitr-dimple/Learning-Web-Designing-and-User-Experience/tree/main/Assignment2) (HTML)
 
 Contains basic of HTML elements and attributes.
 
-## Assignment3
+## [Assignment3](https://github.com/nitr-dimple/Learning-Web-Designing-and-User-Experience/tree/main/Assignment3) (CSS)
 
 Contains basic of CSS selectors, properties, combinators, pseudo-elements and box model. Used CSS class and tag selectors.
 
-## Assignment4
+## [Assignment4](https://github.com/nitr-dimple/Learning-Web-Designing-and-User-Experience/tree/main/Assignment4) (CSS)
 
 Include CSS Positioning, Grid layout, SCSS features like variables, mixins, inheritance, loop, functions, math operations etc.
 
